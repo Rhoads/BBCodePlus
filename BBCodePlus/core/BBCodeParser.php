@@ -71,7 +71,7 @@ final class BBCodeParser extends Parser
             'content' => '$2'
         ],
         'image' => [
-            'pattern' => '/\[img\](.*?)\[\/img\]/s',
+            'pattern' => '/\[img(\s*?width\s*?=\s*?\d+%?)?(\s*?height\s*?=\s*?\d+%?)?\](.*?)\[\/img\]/s',
             'replace' => '<img src="$1">',
             'content' => '$1'
         ],
